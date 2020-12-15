@@ -14,11 +14,11 @@ var message = "tariffa standard";
 console.log(costoBiglietto);
 
 if (eta == 'minorenne') {
-  costoBiglietto -= costoBiglietto * 0.2;
+   costOferta = costoBiglietto -(costoBiglietto * 30 / 100);
   message = "sconto per i minorenni";
 } else if (eta == 'over') {
-  costoBiglietto -= costoBiglietto * 0.4;
-  var message = "sconto Silver";
+  costOferta = costoBiglietto -(costoBiglietto * 40 / 100);
+   message = "sconto Silver";
 }else {
   costoBiglietto = costoBiglietto;
   message = "tariffa standard";
@@ -26,7 +26,7 @@ if (eta == 'minorenne') {
 }
 
 document.getElementById('nome-passegero').innerHTML = '  ' + nomeInput;
-document.getElementById('offerta-applicata').innerHTML = costoBiglietto;
+document.getElementById('offerta-applicata').innerHTML = costOferta;
 document.getElementById('carrozza').innerHTML = Math.floor(Math.random()* 9) + 1;
 document.getElementById('codice-cp').innerHTML="codice";
 document.getElementById('costo').innerHTML = costoBiglietto.toFixed(2);
