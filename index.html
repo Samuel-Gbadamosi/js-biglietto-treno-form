@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <h1>calcola il prezzo del tuo biglietto</h1>
+    <div class="form-dati">
+      <!-- row sect -->
+      <div class="row">
+        <!-- prima riga -->
+        <div class="col">
+          <label for="nome"> Nome Cognome </label>
+          <input id="nome" type="text" placeholder="inserici il nome">
+        </div>
+        <div class="col">
+          <label for="km">km da percorrere</label>
+          <input id="km" type="number" placeholder="inserici il km">
+        </div>
+        <div class="col">
+          <label for="eta">Fascia d'eta</label>
+          <select name="" id="eta">
+            <option value="minorenne">Minorenne</option>
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="over">Over 65</option>
+          </select>
+
+        </div>
+        <!-- prima riga -->
+
+      </div>
+      <!-- seconda riga -->
+      <div class="row">
+
+        <div class="btn">Genera</div>
+        <div class="btn"> Annulla</div>
+      </div>
+      <!-- seconda riga -->
+
+    </div>
+    <!-- /form -->
+
+    <!-- dettaglio di biglietto -->
+    <h2>il tuo biglietto</h2>
+    <div id="biglietto">
+      <h3>dettaglio passeggero </h3>
+      <div class="dettaglio-biglietto row">
+
+        <div class="col">
+          <h3>Nome passeggero
+            <span id="nome-passegero"></span>
+          </h3>
+
+        </div>
+        <div class="col">
+          <table>
+            <tr>
+              <th>offerta</th>
+              <th>Carozza</th>
+              <th>Codice CP</th>
+              <th>Costo biglietto</th>
+            </tr>
+            <tr>
+              <td> <span id="offerta-applicata"></span> </td>
+              <td> <span id="carrozza"></span> </td>
+              <td> <span id="codice-cp"></span> </td>
+              <td> <span id="costo"></span> </td>
+
+            </tr>
+          </table>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- dettaglio di biglietto -->
+
+  </div>
+
+
+  <script src="js/script.js" charset="utf-8"></script>
+
+</body>
+
+</html>
