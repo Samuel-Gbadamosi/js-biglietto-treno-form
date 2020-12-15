@@ -39,7 +39,7 @@ h1{
   padding: 20px 30px;
 }
 
-.btn{
+#genera,#annulla{
   background-color: lightgrey;
   color:#b91450;
   border-radius: 5px;
@@ -70,4 +70,9 @@ input::placeholder {
   background-color: white;
   max-width: 1300px;
   margin: auto;
+}
+
+
+.hidden{
+  display:none;
 }

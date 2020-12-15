@@ -28,7 +28,7 @@
           <input id="km" type="number" placeholder="inserici il km">
         </div>
         <div class="col">
-          <label for="eta">Fascia d'eta</label>
+          <label for="eta">  Fascia d'eta</label>
           <select id="eta">
             <option value="minorenne">Minorenne</option>
             <option value="maggiorenne">Maggiorenne</option>
@@ -42,8 +42,10 @@
       <!-- seconda riga -->
       <div class="row">
 
-        <div class="btn">Genera</div>
-        <div class="btn"> Annulla</div>
+        <!-- <div class="btn">Genera</div>
+        <div class="btn"> Annulla</div> -->
+        <div id="genera">genera</div>
+        <div id="annulla">annulla</div>
       </div>
       <!-- seconda riga -->
 
@@ -52,14 +54,12 @@
 
     <!-- dettaglio di biglietto -->
     <h2>il tuo biglietto</h2>
-    <div id="biglietto">
+    <div id="biglietto" class="hidden">
       <h3>dettaglio passeggero </h3>
       <div class="dettaglio-biglietto row">
 
         <div class="col">
-          <h3>Nome passegero
-            <span id="nome-passegero"></span>
-          </h3>
+          <h3>Nome passegero<span id="nome-passegero">   </span></h3>
 
         </div>
         <div class="col">
